@@ -3,23 +3,23 @@ package main
 import "fmt"
 
 func ArrayMerge(arrayA, arrayB []string) []string {
-	var arrayC []string
-	same := []int{}
-	arrayC = append(arrayA, arrayB...)
-	//fmt.Println("c = ", arrayC)
-	for idx, value := range arrayC {
-		for idx2 := idx + 1; idx2 < len(arrayC); idx2++ {
-			if value == arrayC[idx2] {
-				same = append(same, idx2)
-				break
-			}
+	ans := []string{}
+	key := make(map[string]bool)
+
+	for _, value := range arrayA {
+		if _, num := key[value]; !num {
+			key[value] = true
+			ans = append(ans, value)
 		}
 	}
-	for _, value := range same {
-		//len1 := len(arrayC)
-		arrayC = append(arrayC[:value], arrayC[value+1:]...)
+	for _, value := range arrayB {
+		if _, num := key[value]; !num {
+			key[value] = true
+			ans = append(ans, value)
+		}
 	}
-	return arrayC
+
+	return ans
 }
 
 func main() {
