@@ -1,4 +1,4 @@
-# Summary 5 : Data Structure
+# Summary 6 : Data Structure
 ## Array 
 Array adalah kumpulan data bertipe sama, yang disimpan dalam sebuah variabel. 
 Pada saat pembuatan array, nilai dari kapasitas array sudah ditentukan, menjadikan 
