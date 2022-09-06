@@ -13,10 +13,10 @@ func MostAppearItem(items []string) []pair {
 		item[value]++
 	}
 
-	result := []pair{name: name, count: count}
+	result := make([]pair, 0)
 	for key, value := range item {
-		result.name = key
-		result.count = value
+		product := pair{key, value}
+		result = append(result, product)
 	}
 
 	return result
