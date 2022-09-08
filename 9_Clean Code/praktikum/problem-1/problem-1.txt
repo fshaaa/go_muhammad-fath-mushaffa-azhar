@@ -1,0 +1,10 @@
+Problem 1 - Analysis
+
+Bagian yang kurang tepat yaitu
+1. Penamaan fungsi, diperlihatkan pada gambar bahwa penamaan fungsi tidak menggunakan 
+gaya penulisan CamelCase atau SNAKE_CASE, hal ini membuat orang lain sulit untuk membacanya
+2. Penamaan variabel, didalam function userservice terdapat variabel t yang membuat orang lain 
+sulit untuk mengetahui kenapa fungsi tersebut dibuat
+3. Penamaan parameter yang kurang jelas, hal ini juga dapat membuat orang lain yang membacanya
+sulit mengerti fungsi parameter tersebut
+4. Penamaan variabel di for juga sangat membingungkan yang mana variabel r kurang jelas fungsinya.
