@@ -26,4 +26,5 @@ func main() {
 
 	mobilLamban := mobil{}
 	mobilLamban.berjalan()
+	mobilCepat.totalRoda = 6
 }
