@@ -1,0 +1,111 @@
+Data Definition Language
+
+Soal 1 
+CREATE DATABASE alta_online_shop;
+USE alta_online_shop
+
+Soal 2 
+CREATE TABLE users(
+  id int PRIMARY KEY,
+  name varchar(50),
+  alamat varchar(255),
+  ttl date,
+  gender char(1),
+  status_user varchar(25),
+  created_at timestamp,
+  updated_at timestamp
+  );
+
+CREATE TABLE products(
+  id int PRIMARY KEY,
+  name varchar(50),
+  price int,
+  description text,
+  id_operator int,
+  id_type_product int
+  );
+
+CREATE TABLE type_product(
+  id int PRIMARY KEY,
+  name varchar(50),
+  total int
+  );
+
+CREATE TABLE operators(
+  id int PRIMARY KEY,
+  name varchar(50),
+  company_name varchar(100)
+  );
+
+CREATE TABLE payment_methods(
+  id int PRIMARY KEY,
+  name varchar(50),
+  status varchar(25),
+  payment_date timestamp
+  );
+
+CREATE TABLE transactions(
+  id int PRIMARY KEY,
+  total_price int,
+  total_quantity int,
+  transaction_date timestamp,
+  status varchar(25),
+  id_payment_method int,
+  id_user int
+  );
+
+CREATE TABLE transaction_detail(
+  id_transaction int,
+  id_product int,
+  qty int,
+  price int
+  );
+
+Soal 3
+CREATE TABLE kurir(
+  id int PRIMARY KEY,
+  name varchar(50),
+  created_at timestamp,
+  updated_at timestamp
+  );
+
+Soal 4
+ALTER TABLE kurir
+ADD COLUMN ongkos_dasar int;
+
+Soal 5
+ALTER TABLE kurir RENAME shipping;
+
+Soal 6
+DROP TABLE shipping;
+
+Soal 7
+ALTER TABLE transactions
+  ADD CONSTRAINT id_payment_method_fk
+  FOREIGN KEY (id_payment_method)
+  REFERENCES payment_methods(id);
+
+ALTER TABLE transactions
+  ADD CONSTRAINT id_user_fk
+  FOREIGN KEY (id_user)
+  REFERENCES users(id);
+
+ALTER TABLE products
+  ADD CONSTRAINT id_operator_fk
+  FOREIGN KEY (id_operator)
+  REFERENCES operators(id);
+
+ALTER TABLE products
+  ADD CONSTRAINT id_type_product_fk
+  FOREIGN KEY (id_type_product)
+  REFERENCES type_product(id);
+
+ALTER TABLE transaction_detail
+  ADD CONSTRAINT id_transaction_fk
+  FOREIGN KEY (id_transaction)
+  REFERENCES transactions(id);
+
+ALTER TABLE transaction_detail
+  ADD CONSTRAINT id_product_fk
+  FOREIGN KEY (id_product)
+  REFERENCES products(id);
