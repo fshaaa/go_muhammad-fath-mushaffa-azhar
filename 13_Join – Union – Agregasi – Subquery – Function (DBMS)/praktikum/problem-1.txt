@@ -1,0 +1,74 @@
+1. insert 5 operator di tabel operators
+INSERT INTO operators VALUES 
+  (1, "Telkomsel", now(), now()),
+  (2, "XL", now(), now()),
+  (3, "Indosat", now(), now()),
+  (4, "Axis", now(), now()),
+  (5, "Smartfren", now(), now());
+
+2. insert 3 type product
+INSERT INTO product_types VALUES
+  (1, "Pulsa", now(), now()),
+  (2, "Paket Internet", now(), now()),
+  (3, "Paket Telepon", now(), now());
+
+3. insert 2 product with product type id = 1 dan operator id = 3
+INSERT INTO products VALUES
+  (1, 1, 3, "PLS10KIND", "Pulsa 10000 Indosat", 30, now(), now()),
+  (2, 1, 3, "PLS25KIND", "Pulsa 25000 Indosat", 30, now(), now());
+
+4. insert 3 product with product type id = 2 dan operator id = 1
+INSERT INTO products VALUES
+  (3, 2, 1, "PI3GBTLK", "Paket Internet 3 GB Telkomsel", 30, now(), now()),
+  (4, 2, 1, "PI5GBTLK", "Paket Internet 5 GB Telkomsel", 30, now(), now()),
+  (5, 2, 1, "PI10GBTLK", "Paket Internet 10 GB Telkomsel", 30, now(), now());
+
+5. insert 3 product product type id = 3 dan operator id = 4
+INSERT INTO products VALUES
+  (6, 3, 4, "PT30MNTAX", "Paket Telepon 30 Menit Axis", 30, now(), now()),
+  (7, 3, 4, "PT60MNTAX", "Paket Telepon 60 Menit Axis", 30, now(), now()),
+  (8, 3, 4, "PT90MNTAX", "Paket Telepon 90 Menit Axis ", 30, now(), now());
+
+6. insert description di setiap product
+INSERT INTO product_descriptions VALUES 
+  (1, "Mengisi Pulsa Indosat senilai Rp10.000,- dan menambah masa aktif selama 30 hari", now(), now()),
+  (2, "Mengisi Pulsa Indosat senilai Rp25.000,- dan menambah masa aktif selama 30 hari", now(), now()),
+  (3, "Menambahkan Paket Internet Telkomsel sebesar 3 GB selama 30 hari", now(), now()),
+  (4, "Menambahkan Paket Internet Telkomsel sebesar 5 GB selama 30 hari", now(), now()),
+  (5, "Menambahkan Paket Internet Telkomsel sebesar 10 GB selama 30 hari", now(), now()),
+  (6, "Menambahkan Paket Telepon selama 30 Menit selama 30 hari", now(), now()),
+  (7, "Menambahkan Paket Telepon selama 60 Menit selama 30 hari", now(), now()),
+  (8, "Menambahkan Paket Telepon selama 90 Menit selama 30 hari", now(), now());
+  
+7. Insert 3 Payment Methods
+INSERT INTO payment_methods VALUES
+  (1, "QRIS", 0, now(), now()),
+  (2, "Gopay", 1000, now(), now()),
+  (3, "Dana", 500, now(), now());
+
+8. insert 5 user
+INSERT INTO users VALUES 
+  (1, "azhar", "2002/04/15", "M", now(), now()),
+  (2, "akmal", "2002/09/17", "M", now(), now()),
+  (3, "linda", "2003/05/13", "F", now(), now()),
+  (4, "fasya", "2001/09/02", "F", now(), now()),
+  (5, "sultan", "2001/02/01", "M", now(), now());
+
+9. insert 3 transaksi masing-masing users
+INSERT INTO transactions VALUES 
+  (1, 1, 2, "lunas", 1,  50000.00, now(), now()),
+  (2, 5, 2, "lunas", 2,  50000.00, now(), now()),
+  (3, 3, 1, "lunas", 1,  50000.00, now(), now()),
+  (4, 4, 2, "lunas", 1,  50000.00, now(), now()),
+  (5, 2, 1, "lunas", 1,  50000.00, now(), now()),
+  (6, 4, 1, "lunas", 1,  50000.00, now(), now()),
+  (7, 5, 2, "lunas", 1,  50000.00, now(), now()),
+  (8, 1, 3, "lunas", 1,  50000.00, now(), now()),
+  (9, 3, 2, "lunas", 1,  50000.00, now(), now()),
+  (10, 3, 2, "lunas", 1,  50000.00, now(), now()),
+  (11, 2, 1, "lunas", 1,  50000.00, now(), now()),
+  (12, 1, 2, "lunas", 1,  50000.00, now(), now()),
+  (13, 4, 2, "lunas", 1,  50000.00, now(), now()),
+  (14, 2, 1, "lunas", 1,  50000.00, now(), now()),
+  (15, 5, 3, "lunas", 1,  50000.00, now(), now());
+  
