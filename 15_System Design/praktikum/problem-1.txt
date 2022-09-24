@@ -1,0 +1,8 @@
+Problem 1
+1. Membuat ERD sistem pencatat pengeluaran harian
+Link draw.io: https://app.diagrams.net/#G1YJgLMicAWx1geDRqzqOXzD3oqGa22KbV
+Link GDrive: https://drive.google.com/file/d/1YJgLMicAWx1geDRqzqOXzD3oqGa22KbV/view?usp=sharing 
+
+2. Gambarkan Use Case Diagram dari sistem tersebut
+Link draw.io: https://app.diagrams.net/#G1BbBpJZHsx5GYWn6ZSGs57OdtS8qdJCDg
+Link GDrive: https://drive.google.com/file/d/1BbBpJZHsx5GYWn6ZSGs57OdtS8qdJCDg/view?usp=sharing
