@@ -1,0 +1,21 @@
+#!/bin/sh
+
+rootFolder = "$1 at ${date}"
+
+mkdir -p "$rootFolder"/about_me/personal
+mkdir "$rootFolder"/about_me/professional
+mkdir "$rootFolder"/my_friends
+mkdir "$rootFolder"/my_system_info
+
+facebookURL = "https://www.facebook.com/tegarimansyahfb"
+linkedinURL = "https://www.linkedin.com/in/tegarimansyahlinkedin"
+
+echo "$facebookURL" > "$rootFolder"/about_me/personal/facebook.txt
+echo "$linkedinURL" > "$rootFolder"/about_me/personal/linkedin.txt
+
+curl -s https://gist.github.com/tegarimansyah/e91f335753ab2c7fb12815779677e914#file-list-of-my-friends-txt > "$rootFolder"/my_friends/list_of_my_friends.txt
+
+echo "My username: $USER" >> "$rootFolder"/my_system_info/about_this_laptop.txt
+uanme -a >> "$rootFolder"/my_system_info/about_this_laptop.txt
+
+ping google.com -c 3 > "$rootFolder"/my_system_info/internet_connection.txt
