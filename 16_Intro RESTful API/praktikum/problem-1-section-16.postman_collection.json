@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "007955c4-e18e-4cf5-8b67-7b0039c6ee1a",
+		"name": "problem-1-section-16",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23532584"
+	},
+	"item": [
+		{
+			"name": "https://newsapi.org/v2/everything?q=microsoft&from=2022-09-25&to=2022-09-25&sortBy=popularity&apiKey=78c63b1690b64bc68392abce74f19fc8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&apiKey=78c63b1690b64bc68392abce74f19fc8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "apiKey",
+							"value": "78c63b1690b64bc68392abce74f19fc8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=78c63b1690b64bc68392abce74f19fc8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=78c63b1690b64bc68392abce74f19fc8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "sources",
+							"value": "techcrunch"
+						},
+						{
+							"key": "apiKey",
+							"value": "78c63b1690b64bc68392abce74f19fc8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://newsapi.org/v2/top-headlines?country=us&apiKey=78c63b1690b64bc68392abce74f19fc8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=us&apiKey=78c63b1690b64bc68392abce74f19fc8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "apiKey",
+							"value": "78c63b1690b64bc68392abce74f19fc8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=78c63b1690b64bc68392abce74f19fc8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=78c63b1690b64bc68392abce74f19fc8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "domains",
+							"value": "wsj.com"
+						},
+						{
+							"key": "apiKey",
+							"value": "78c63b1690b64bc68392abce74f19fc8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://newsapi.org/v2/everything?q=apple&from=2022-09-25&to=2022-09-25&sortBy=popularity&apiKey=78c63b1690b64bc68392abce74f19fc8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=apple&from=2022-09-25&to=2022-09-25&sortBy=popularity&apiKey=78c63b1690b64bc68392abce74f19fc8",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2022-09-25"
+						},
+						{
+							"key": "to",
+							"value": "2022-09-25"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "78c63b1690b64bc68392abce74f19fc8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
