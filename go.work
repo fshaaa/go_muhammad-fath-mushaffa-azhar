@@ -1,1 +1,2 @@
 go 1.19
+use "17_Intro Echo Golang/praktikum"
