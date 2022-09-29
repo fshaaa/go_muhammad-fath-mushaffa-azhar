@@ -1,2 +1,3 @@
 go 1.19
 use "17_Intro Echo Golang/praktikum"
+use "18_ORM and Code Structure (MVC)/praktikum/problem-1"
