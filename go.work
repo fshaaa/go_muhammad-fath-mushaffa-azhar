@@ -3,3 +3,4 @@ use "17_Intro Echo Golang/praktikum"
 use "18_ORM and Code Structure (MVC)/praktikum/problem-1"
 use "18_ORM and Code Structure (MVC)/praktikum/problem-2"
 use "weeekly-task/problem-1"
+use 19_Middleware/praktikum
