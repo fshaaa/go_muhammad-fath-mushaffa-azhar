@@ -5,3 +5,5 @@ use "18_ORM and Code Structure (MVC)/praktikum/problem-2"
 use "weeekly-task/problem-1"
 use 19_Middleware/praktikum
 use weekly-task-2/praktikum
+use "20_Unit Testing/praktikum/problem-1"
+use "20_Unit Testing/praktikum/problem-2"
