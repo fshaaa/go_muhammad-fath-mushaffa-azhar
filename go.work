@@ -7,3 +7,5 @@ use 19_Middleware/praktikum
 use weekly-task-2/praktikum
 use "20_Unit Testing/praktikum/problem-1"
 use "20_Unit Testing/praktikum/problem-2"
+use "./21_Clean and Hexagonal Architecture/praktikum/problem-1"
+use "./21_Clean and Hexagonal Architecture/praktikum/problem-2"
