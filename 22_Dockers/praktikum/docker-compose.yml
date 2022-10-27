@@ -1,0 +1,21 @@
+version: "2.1"
+services:
+  db_mysql:
+    image: "mysql:latest"
+    environment:
+      MYSQL_ROOT_PASSWORD: "019283"
+      MYSQL_DATABASE: "crud_go"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+
+  rest_api-user:
+    image: "fshaaa/rest-api:v1.1"
+    ports:
+      - "8080:8080"
+    environment:
+      DB_ADDRESS: "db_mysql"
+      APIPort: ":8080"
+    depends_on:
+      db_mysql:
+        condition: service_healthy
